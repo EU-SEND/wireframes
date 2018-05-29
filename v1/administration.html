@@ -81,7 +81,7 @@
       
       <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Organisation</a></li>
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Entity</a></li>
         <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Business</a></li>
         <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">System</a></li>
       </ul>
@@ -92,18 +92,20 @@
           <div class="clearfix">
             <div class="form-group">
               <select class="form-control">
-                <option>Organisation 1</option>
-                <option>Organisation 2</option>
-                <option>Organisation 3</option>
-                <option>Organisation 4</option>
-                <option>Organisation 5</option>
+                <option>Entity 1</option>
+                <option>Entity 2</option>
+                <option>Entity 3</option>
+                <option>Entity 4</option>
+                <option>Entity 5</option>
               </select>
             </div>
             <div class="form-group">
               <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Alias">
             </div>
             <hr>
-            <h3>Organisation 1</h3>
+            <h3>Entity 1<a class="btn btn-default pull-right">Export users in Excel file</a></h3>
+			   
+			  
             <div class="clearfix">
               <h4>Administrators</h4>
               <a class="btn btn-default pull-right" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Add administrator</a> </div>
@@ -118,6 +120,7 @@
                     <input type="text" class="form-control" id="exampleInputEmail2" placeholder="EU login ID">
                   </div>
                   <div class="form-group">
+					  <h4>Notification preferences</h4>
                     <label class="checkbox-inline">
                       <input type="checkbox" id="inlineCheckbox1" value="option1">
                       Message </label>
@@ -180,6 +183,7 @@
                   <input type="text" class="form-control" id="exampleInputEmail4" placeholder="EU login ID">
                 </div>
                 <div class="form-group">
+					<h4>Notification preferences</h4>
                   <label class="checkbox-inline">
                     <input type="checkbox" id="inlineCheckbox1" value="option1">
                     Message </label>
@@ -238,7 +242,7 @@
             </select>
           </div>
           <hr>
-          <h3>Business 1</h3>
+          <h3>Business 1 <a class="btn btn-default pull-right">Export users in Excel file</a></h3>
           <div class="clearfix"> <a class="btn btn-default pull-right" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">Add administrator</a> </div>
           <div class="collapse" id="collapseExample2">
             <div class="card card-body">
@@ -251,6 +255,7 @@
                   <input type="text" class="form-control" id="exampleInputEmail6" placeholder="EU login ID">
                 </div>
                 <div class="form-group">
+					<h4>Notification preferences</h4>
                   <label class="checkbox-inline">
                     <input type="checkbox" id="inlineCheckbox4" value="option1">
                     Message </label>
@@ -298,8 +303,9 @@
             </tbody>
           </table>
           <hr>
-          <a href="#" class="btn btn-default pull-right">Add business organisation</a> </div>
+          <a href="#" class="btn btn-default pull-right">Add business Entity</a> </div>
         <div role="tabpanel" class="tab-pane" id="messages">
+			   <h3>System<a class="btn btn-default pull-right">Export users in Excel file</a></h3>
           <div class="clearfix"> <a class="btn btn-default pull-right" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">Add administrator</a> </div>
           <div class="collapse" id="collapseExample3">
             <div class="card card-body">
@@ -312,6 +318,7 @@
                   <input type="text" class="form-control" id="exampleInputEmail15" placeholder="EU login ID">
                 </div>
                 <div class="form-group">
+					<h4>Notification preferences</h4>
                   <label class="checkbox-inline">
                     <input type="checkbox" id="inlineCheckbox8" value="option1">
                     Message </label>
