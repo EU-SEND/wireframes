@@ -1,0 +1,253 @@
+/*section { border:1px solid black;}
+[class*="col-"] { border:1px solid red;}*/
+
+/* --- RESET BOOTSRAPT --- */
+/* ----------------------- */
+a { text-decoration: underline;}
+a:hover { text-decoration: none;}
+a, a:hover { color: black;}
+
+.btn { background-image: url("../img/bg-button.png"); background-size: 100% 100%; border:none; text-decoration: none;}
+
+.dropdown-menu > li > a { text-decoration: none;}
+.dropdown-menu > li > a:hover { text-decoration: underline;}
+
+.label-default { background-color: #666666; border-radius:0px;}
+
+.nav>li>a:focus, .nav>li>a:hover { color: black;}
+.nav>li>a { text-decoration: none;}
+.nav>li>a:hover { text-decoration: underline;}
+.nav-pills>li>a { border-radius: 0px;}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: #666666;
+    border-radius:0px;
+}
+.form-control { border-radius:0px;}
+
+/* --- TAG --- */
+/* ----------- */
+hr { height: 1px; background-image: url("../img/border-dashed.png"); background-repeat: no-repeat; background-position: bottom; border: 1px solid transparent; }
+
+/* --- TEXT --- */
+/* ------------ */
+
+body {font-size: 1.4rem; font-family: 'Roboto', sans-serif; font-weight: 400; color: black;} 
+
+h1, .received-detail h2 {font-size: 4rem;} 
+
+h2 { font-size: 3rem;} 
+
+h3, .received-summary h2, .from, .important { font-size: 2.4rem;}
+
+h1, h2, h3, h4 { font-weight: bold;}
+
+h1, h2, h3, p, ul, .received-summary h2, .received-detail h2 { margin:0; padding: 0;}
+
+@media (orientation: landscape) {
+	h1, h2, h3, p, ul { padding-bottom: 2vh;}
+}
+@media (orientation: portrait) {
+	h1, h2, h3, p, ul { padding-bottom: 4vw;}
+}
+
+/* ----------------------------- */
+/* --------- STRUCTURE --------- */
+/* ----------------------------- */
+
+/* --- HEADER --- */
+/* -------------- */
+header { margin-bottom: 20px; padding: 20px; background-image: url("../img/border.png"); background-repeat: no-repeat; background-position: bottom;}
+
+.logo { font-size: 1.8rem; font-weight: bold; text-decoration: none;}
+.logo:hover { text-decoration: underline;}
+
+header .btn-top-action { position: relative; z-index:2000; padding-bottom: 0;}
+header .btn-top-action li { margin-right: 10px;}
+
+header .btn-top-help { font-size: 20px;}
+header .btn-top-contrast { font-size: 20px;}
+
+
+/* --- TOP BAR --- */
+/* -------------- */
+
+.switch-nav { padding-bottom: 0;}
+.switch-nav a { color: white;}
+.switch-nav .active { color: white !important; text-decoration: none !important; background: none !important; border-bottom:3px solid white;}
+
+.notification-btn { margin-right: 40px;}
+.notification-btn li { margin-right: 10px;}
+.notification-btn a { font-size: 20px;}
+.notification-btn:before { content:"2"; position:absolute; top: 0; right: 0; z-index: 1000; padding: 3px 7px; font-weight: bold; background-color: white; border-radius: 10px;}
+.notification-btn.nav>li>a:focus, .notification.nav>li>a:hover { color: black;}
+.notification-btn .dropdown-menu { float: right; width: 260px; }
+.notification-btn .dropdown-menu li { margin-right: 0; padding: 0 0; }
+.notification-btn .dropdown-menu > li > a { display: block; padding: 10px 10px 10px 30px; font-size: inherit; white-space: normal; word-wrap: break-word;}
+.notification-btn .dropdown-menu > li > a.no-unread { position: relative; background-color: #f2f2f2;}
+.notification-btn .dropdown-menu > li > a.no-unread:before { content: "."; position:absolute; top:0; left: 5px; font-size: 80px; line-height: 0;}
+
+/* --- FOOTER --- */
+/* -------------- */
+footer { margin-top:20px; padding: 20px 0;  text-align: center; background-image: url("../img/border.png"); background-repeat: no-repeat; background-position: top;}
+
+/* ------------------------ */
+/* --------- PAGE --------- */
+/* ------------------------ */
+.inbox-action { margin-bottom: 10px; text-align: right;}
+
+/* --- RECEIVED PAGES SUMMARY --- */
+/* ------------------------------ */
+.received-summary ul { margin:0;  padding: 0; height: 100vh; overflow: auto; -moz-scrollbars-vertical;}
+.received-summary ul li { position: relative; margin:0; padding:20px 20px 20px 30px; list-style-type:none; background-image: url("../img/border.png"); background-repeat: no-repeat; background-position: bottom;}
+/*clearfix hack*/
+.received-summary ul li:before,
+.received-summary ul li:after { content: ""; display: table;} 
+.received-summary ul li:after { clear: both;}
+.received-summary ul li { zoom: 1;}
+.received-summary ul li a { text-decoration: none;}
+.received-summary ul li a:hover { text-decoration: underline;}
+.received-summary ul li.no-unread { background-color: #f2f2f2;}
+.received-summary ul li.no-unread:before {content: "."; position:absolute; top:10px; left: 5px; font-size: 80px; line-height: 0;}
+.received-summary ul li.no-unread h2 { font-weight: bold;}
+.received-summary ul li h2 { font-weight: normal;}
+
+.received-summary ul li.selected, .received-summary ul li.selected:hover { color: white; background-color: #666666;}
+.received-summary ul li.selected a { color: white;}
+.received-summary ul li:hover { background-color: #e6e6e6;}
+.received-summary .date { float: right;}
+.received-summary .expired { float: right; margin-bottom:10px;}
+.received-summary .search { display: inline; max-width: 60%;}
+
+.language-available-btn { margin-top:10px; }
+.language-available { height: auto !important;}
+.language-available li { display: inline !important; padding: 0 !important;}
+.language-available li::before, .language-available li::after { content: ""; display: inline !important;}
+.language-available li::after { content:" - " !important}
+.language-available li:hover { background-color: transparent !important;}
+
+.language-available-inline li { display: inline;}
+
+/* --- RECEIVED DETAIL --- */
+/* ----------------------- */
+.received-detail .date { margin-top: 60px; padding-bottom: 0;}
+.choose-message { margin-top: 60px; width:100%; text-align: center;}
+.choose-message p { padding-top: 60px; padding-bottom: 60px; font-weight: bold; border:1px dashed black;}
+
+/* --- SEND PAGES --- */
+/* ------------------ */
+.send { margin-top:20px; margin-bottom: 20px; padding: 20px; text-align: center; border:1px dashed black;}
+.send i { padding-bottom: 2vh; font-size: 60px;}
+
+/* --- NOTIFICATION --- */
+/* -------------------- */
+.notification ul { margin:0;  padding: 0;}
+.notification ul li { position: relative; margin:0; padding:20px 20px 20px 30px; list-style-type:none; background-image: url("../img/border.png"); background-repeat: no-repeat; background-position: bottom;}
+.notification ul li.no-unread { background-color: #f2f2f2;}
+.notification ul li h2 { font-weight: normal;}
+.notification .date { float: right;}
+
+/* --- HELP --- */
+/* ------------ */
+.help-card { margin-bottom: 20px; min-height: 100px; background-image: url("../img/border.png"); background-size: 80% 5px; background-repeat: no-repeat; background-position: bottom;}
+.help-card small { font-weight: bold;}
+
+/* ----------------------------- */
+/* --------- COMPONENT --------- */
+/* ----------------------------- */
+
+/* --- TREE VIEW --- */
+/* ----------------- */
+.treegrid-indent {width:16px; height: 16px; display: inline-block; position: relative;}
+.treegrid-expander {width:16px; height: 16px; display: inline-block; position: relative; cursor: pointer;}
+.treegrid-expander-expanded {background-image: url(../egreffe/img/collapse.png);}
+.treegrid-expander-collapsed {background-image: url(../egreffe/img/expand.png);}
+
+/* --- SCROLLBAR --- */
+/* ----------------- */
+/* Chrome and Safari */
+::-webkit-scrollbar {width: 10px;}
+/* Track */
+::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px #CCC;
+background: #CCC;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #666;
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+background: rgba(255, 0, 0, 0.4);
+}
+
+/* --- CHART --- */
+/* ------------- */
+.single-chart { justify-content: space-around;}
+.circular-chart { display: block; margin: 0 auto; max-width: 80%; max-height: 180px;}
+.circle-bg { fill: none; stroke: #EEE; stroke-width: 2;}
+.circle { fill: none; stroke-width: 2; stroke-linecap: round; animation: progress 1s ease-out forwards;}
+
+@media (orientation: landscape) {
+.single-chart { padding: 2vh 0;}
+}
+@media (orientation: portrait) {
+.single-chart { padding: 4vw 0;}
+}
+.circular-chart .circle { stroke: #000;}
+.percentage { fill: #000; font-family: sans-serif; font-size: 0.5em; text-anchor: middle;}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+/* --- PANEL COLLAPSE --- */
+/* ---------------------- */
+.panel-title > a { text-decoration: none;}
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: grey;         /* adjust as needed */
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}
+
+/* --- BUTTON COLLAPSE --- */
+/* ----------------------- */
+.collapse-btn { display: block; margin-bottom: 20px; text-decoration: none;}
+.collapse-btn h2, .collapse-btn h5, .collapse-btn p { display: inline;}
+.collapse-btn.text:after  { font-family: 'Glyphicons Halflings'; content: " \002b show";}
+/*.collapse-btn[aria-expanded="false"]:after {font-family: 'Glyphicons Halflings'; content: "(show more \002b)";}
+.collapse-btn[aria-expanded="true"]:after  { font-family: 'Glyphicons Halflings'; content: "(show less \2212)";}*/
+
+
+/* --- NAV TAB --- */
+/* --------------- */
+.nav-tabs { margin-bottom:20px;  padding-bottom:0;}
+
+/* --- NAV TAB --- */
+/* --------------- */
+.alert-notification { z-index: 1000; position: absolute; bottom: 10px; left: 10px; width: 50%; background: black; color:white; }
+.alert-notification a, .alert-notification a:hover { color:white; opacity: 1;}
+
+/* -------------------------------- */
+/* --------- HELPER CLASS --------- */
+/* -------------------------------- */
+.icon-list { padding-left: 20px;}
+.icon-list i { padding-right: 5px;}
+
+.ul-styled { margin-left: 20px;}
+
+.search { margin-bottom:20px; display: inline; max-width: 60%;}
+
+.badge-alternate { color: black; background-color: white;}
+
+.disable-status { color: darkgrey;}
+
+.show-more-file { text-decoration:underline;}
+.show-more-file:hover { text-decoration:none;}
