@@ -235,6 +235,15 @@ background: rgba(255, 0, 0, 0.4);
 .alert-notification { z-index: 1000; position: absolute; bottom: 10px; left: 10px; width: 50%; background: black; color:white; }
 .alert-notification a, .alert-notification a:hover { color:white; opacity: 1;}
 
+/* ------------------------ */
+/* --------- CARD --------- */
+/* ------------------------ */
+.help h2 { margin-top: 40px;}
+.card-list {}
+.card {margin-top: 20px; padding: 20px; border:1px solid black;}
+.card i { font-size: 2rem;}
+.card h3 {margin-top: 20px;}
+
 /* -------------------------------- */
 /* --------- HELPER CLASS --------- */
 /* -------------------------------- */

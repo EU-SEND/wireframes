@@ -51,7 +51,7 @@
         </ul>
       </li>
       <li><a href="help.html" class="btn-top-help"><i class="glyphicon glyphicon-question-sign"></i></a></li>
-      <li class="dropdown notification-btn"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-bell"></i></a>
+		<li class="dropdown notification-btn"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-bell"></i></a>
         <ul class="dropdown-menu">
           <li><a href="notification.html"><span class="badge pull-right">2</span> <strong>Notifications</strong> </a> </li>
           <li role="separator" class="divider"></li>
@@ -69,24 +69,28 @@
   </header>
 </div>
 <div class="top-bar clearfix">
-  <div class="container-fluid"> </div>
+  <div class="container-fluid">
+  </div>
 </div>
 <div class="container-fluid">
-  <div class="row"> 
-    <!--SECOND COLUMN-->
-    <div class="col-md-6 col-md-offset-3">
-      <p><a href="received-home.html" class="btn btn-default">Back to Inbox</a></p>
-    </div>
-    <div class="col-md-6 col-md-offset-3">
-      <h1> Profile </h1>
-      <p><strong>Name</strong>: Krumova</p>
-      <p><strong>First name</strong>: Yuliya</p>
-      <p><strong>Entity</strong>: XYZ</p>
-    </div>
-  </div>
-  <footer>
-    <p>European Commision - EU Send</p>
-  </footer>
+<div class="row">
+<!--SECOND COLUMN-->
+<div class="col-md-6 col-md-offset-3">
+
+</div>
+<div class="col-md-6 col-md-offset-3">
+<h1>Sending confirmation</h1>
+	<p>Dear Yuliya Krumova,</p>
+	<p>Your files have been sending with success!</p>
+	  <p><a href="received-home.html" class="btn btn-default">Back to Inbox</a></p>
+	
+
+
+</div>
+</div>
+<footer>
+  <p>European Commision - EU Send</p>
+</footer>
 </div>
 
 <!-- Bootstrap core JavaScript
@@ -106,6 +110,10 @@
                     expanderCollapsedClass: 'glyphicon glyphicon-folder-close'
           });
       });
+	
+		$(function () {
+  $('[data-toggle="popover"]').popover()
+})
     </script>
 </body>
 </html>

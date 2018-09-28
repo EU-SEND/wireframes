@@ -72,58 +72,88 @@
 
 <div class="container-fluid">
   <div class="row"> 
-    <!--SECOND COLUMN-->
-    <div class="col-md-6 col-md-offset-3">
-      <p><a href="received-home.html" class="btn btn-default">Back to Inbox</a></p>
+    
+    <!-- FIRST COLUMN -->
+    
+    <div class="col-md-2">
+      <div class="clearfix"><a href="received-home.html" class="btn btn-default"><i class="glyphicon glyphicon-arrow-left"></i> Back to inbox</a></div>
     </div>
-    <div class="col-md-6 col-md-offset-3">
-      <div class="row">
-        <h1> Help </h1>
-        <input type="text" placeholder="What can we do for you?" class="form-control search">
-        <a href="#" class="btn btn-default pull-right">See all articles</a>
-        <h2> Main articles </h2>
-        <div class="col-md-4 help-card"> <small>Administration</small>
-          <p><a href="#">How to add a user? <i class="glyphicon glyphicon-arrow-right"></i></a></p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    
+    <!-- END FIRST COLUMN --> 
+    
+    <!-- SECOND COLUMN -->
+    <div class="col-md-8 help">
+      <h1>How can we help you?</h1>
+      <div class="form-group">
+        <label>Describe your issue </label>
+        <input type="text" class="form-control" id="exampleInputEmail1">
+      </div>
+      <h2>Browse help categories</h2>
+      <div class="row card-list">
+        <div class="col-md-4">
+          <div class="card"><a><i class="glyphicon glyphicon-inbox"></i>
+            <h3>Inbox</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a></div>
         </div>
-        <div class="col-md-4 help-card"> <small>Sending</small>
-          <p><a href="#">Why is my upload slow? <i class="glyphicon glyphicon-arrow-right"></i></a></p>
-          <p>Nulla vel libero sit amet diam sagittis tristique eleifend et dui. Curabitur quis nisl...</p>
+        <div class="col-md-4">
+          <div class="card"><a><i class="glyphicon glyphicon-envelope"></i>
+            <h3>Sending Files</h3>
+            <p>Cras pulvinar mattis nunc sed. Nec feugiat nisl pretium fusce id velit ut tortor. Lacus viverra vitae congue eu consequat ac felis donec et. Ut eu sem integer. </p>
+            </a></div>
         </div>
-        <div class="col-md-4 help-card"> <small>Receiving</small>
-          <p><a href="#">Question 1 <i class="glyphicon glyphicon-arrow-right"></i></a></p>
-          <p>Et posuere ex laoreet, Sed hendrerit mattis libero sed iaculis...</p>
+        <div class="col-md-4">
+          <div class="card"><a><i class="glyphicon glyphicon-user"></i>
+            <h3>Administration</h3>
+            <p>Nisl nisi scelerisque eu ultrices. Dictum non consectetur a erat nam. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus. </p>
+            </a></div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4 help-card"> <small>Sending</small>
-          <p><a href="#">Can I delete my upload? <i class="glyphicon glyphicon-arrow-right"></i></a></p>
-          <p>Et posuere ex laoreet, Sed hendrerit mattis libero sed iaculis...</p>
+		      <div class="row card-list">
+        <div class="col-md-4">
+          <div class="card"><a><i class="glyphicon glyphicon-inbox"></i>
+            <h3>EU login</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </a></div>
         </div>
-        <div class="col-md-4 help-card"><small>Sending</small>
-          <p><a href="#">Why doesn't the transfert start? <i class="glyphicon glyphicon-arrow-right"></i></a></p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        </div>
-        <div class="col-md-4 help-card"> <small>Sending</small>
-          <p><a href="#">How many GB can I upload? <i class="glyphicon glyphicon-arrow-right"></i></a></p>
-          <p>Nulla vel libero sit amet diam sagittis tristique eleifend et dui. Curabitur quis nisl...</p>
+        <div class="col-md-4">
+          <div class="card"><a><i class="glyphicon glyphicon-envelope"></i>
+            <h3>Security</h3>
+            <p>Cras pulvinar mattis nunc sed. Nec feugiat nisl pretium fusce id velit ut tortor. Lacus viverra vitae congue eu consequat ac felis donec et. Ut eu sem integer. </p>
+            </a></div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4 help-card"> <small>Administration</small>
-          <p><a href="#">How to add an administrator? <i class="glyphicon glyphicon-arrow-right"></i></a></p>
-          <p>Nulla vel libero sit amet diam sagittis tristique eleifend et dui. Curabitur quis nisl...</p>
+      <h2>Other ways to get help</h2>
+      <div class="row card-list">
+        <div class="col-md-4">
+          <div><a><i class="glyphicon glyphicon-book"></i>
+            <h3>Wiki page</h3>
+            </a></div>
         </div>
-        <div class="col-md-4 help-card"> <small>Administration</small>
-          <p><a href="#">I have an error 404!<i class="glyphicon glyphicon-arrow-right"></i></a></p>
-          <p>Et posuere ex laoreet, Sed hendrerit mattis libero sed iaculis...</p>
+        <div class="col-md-4">
+          <div><a><i class="glyphicon glyphicon-earphone"></i>
+            <h3>Contact support</h3>
+            </a></div>
         </div>
-        <div class="col-md-4 help-card"> <small>Receiving</small>
-          <p><a href="#">Can I download a transfer that expired? <i class="glyphicon glyphicon-arrow-right"></i></a></p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        </div>
+        <div class="col-md-4"> </div>
       </div>
     </div>
+    
+    <!-- END SECOND COLUMN --> 
+    
+    <!-- SECOND COLUMN -->
+    <div class="col-md-2 received-summary">
+      <h2>Popular articles</h2>
+		<br>
+		<p><a>1. Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics ?</a></p>
+		<p><a>2. Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics ?</a></p>
+		<p><a>3. Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics ?</a></p>
+		<p><a>4. Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics ?</a></p>
+		<p><a>5. Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics ?</a></p>
+    </div>
+    
+    <!-- END SECOND COLUMN --> 
+    
   </div>
 </div>
 <footer>

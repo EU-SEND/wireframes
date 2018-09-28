@@ -7,14 +7,14 @@
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="icon" href="../default-full/favicon.ico">
-<title>European Commission - EU Send</title>
+<link rel="icon" href="favicon.ico">
+<title>EU send</title>
 
 <!-- Bootstrap core CSS -->
 <link href="../css/bootstrap.min.css" rel="stylesheet">
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<link href="../default-full/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+<link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
 <link rel="stylesheet" href="../css/custom.css">
@@ -24,7 +24,7 @@
 
 <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-<script src="../default-full/js/ie-emulation-modes-warning.js"></script>
+<script src="../js/ie-emulation-modes-warning.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -34,8 +34,10 @@
 </head>
 
 <body>
+
+<!-- HEADER -->
 <div class="container-fluid">
-  <header class="clearfix"> <a href="received-home.html" class="logo">European Commission - EU Send</a>
+  <header class="clearfix"> <a href="received-home.html" class="logo">EU send</a>
     <ul class="nav navbar-nav navbar-right btn-top-action">
       <li class="dropdown"> <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">En - English <span class="caret"></span></a>
         <ul class="dropdown-menu">
@@ -46,12 +48,11 @@
       <li class="dropdown"> <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yuliya Krumova <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="administration.html">Administration</a></li>
-          <li><a href="profile.html">Profile</a></li>
           <li><a href="#">Log out</a></li>
         </ul>
       </li>
       <li><a href="help.html" class="btn-top-help"><i class="glyphicon glyphicon-question-sign"></i></a></li>
-		<li class="dropdown notification-btn"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-bell"></i></a>
+      <li class="dropdown notification-btn"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-bell"></i></a>
         <ul class="dropdown-menu">
           <li><a href="notification.html"><span class="badge pull-right">2</span> <strong>Notifications</strong> </a> </li>
           <li role="separator" class="divider"></li>
@@ -68,39 +69,38 @@
     </ul>
   </header>
 </div>
-<div class="top-bar clearfix">
-  <div class="container-fluid">
+<!-- END HEADER -->
+
+<div class="container-fluid">
+  <div class="row"> 
+    
+    <!-- FIRST COLUMN -->
+    
+    <div class="col-md-2">
+      <div class="clearfix"><a href="received-home.html" class="btn btn-default"><i class="glyphicon glyphicon-arrow-left"></i> Back to inbox</a></div>
+    </div>
+    
+    <!-- END FIRST COLUMN --> 
+    
+    <!-- SECOND COLUMN -->
+    <div class="col-md-10 received-summary">
+      <h1>Sending confirmation</h1>
+	  <p>Dear Yuliya Krumova,<br><br> Your files have been sending with success!</p>
+    </div>
+    
+    <!-- END SECOND COLUMN --> 
+    
   </div>
 </div>
-<div class="container-fluid">
-<div class="row">
-<!--SECOND COLUMN-->
-<div class="col-md-6 col-md-offset-3">
-
-</div>
-<div class="col-md-6 col-md-offset-3">
-<h1>Sending confirmation</h1>
-	<p>Dear Yuliya Krumova,</p>
-	<p>Your files have been sending with success!</p>
-	  <p><a href="received-home.html" class="btn btn-default">Back to Inbox</a></p>
-	
-
-
-</div>
-</div>
 <footer>
-  <p>European Commision - EU Send</p>
+  <p>EU send powered by European Commission</p>
 </footer>
-</div>
 
 <!-- Bootstrap core JavaScript
     ================================================== --> 
 <!-- Placed at the end of the document so the pages load faster --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script> 
 <script src="../js/bootstrap.min.js"></script> 
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
-<script src="../default-full/js/ie10-viewport-bug-workaround.js"></script> 
 <script src="../js/jquery.treegrid.js"></script> 
 <script src="../js/jquery.treegrid.bootstrap3.js"></script> 
 <script>
@@ -111,10 +111,16 @@
           });
       });
 	
-		$(function () {
+	$(function () {
   $('[data-toggle="popover"]').popover()
 })
-    </script>
+	
+    </script> 
+<script>
+	$(function () {
+  		$('[data-toggle="tooltip"]').tooltip()
+	})
+	</script>
 </body>
 </html>
 
