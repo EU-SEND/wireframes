@@ -97,6 +97,8 @@ footer { margin-top:20px; padding: 20px 0;  text-align: center; background-image
 
 /* --- RECEIVED PAGES SUMMARY --- */
 /* ------------------------------ */
+.received-summary {}
+.collapse-arrow { position: absolute; top: 0; right: 20px;}
 .received-summary ul { margin:0;  padding: 0; height: 100vh; overflow: auto; -moz-scrollbars-vertical;}
 .received-summary ul li { position: relative; margin:0; padding:20px 20px 20px 30px; list-style-type:none; background-image: url("../img/border.png"); background-repeat: no-repeat; background-position: bottom;}
 /*clearfix hack*/
@@ -239,7 +241,6 @@ background: rgba(255, 0, 0, 0.4);
 /* --------- CARD --------- */
 /* ------------------------ */
 .help h2 { margin-top: 40px;}
-.card-list {}
 .card {margin-top: 20px; padding: 20px; border:1px solid black;}
 .card i { font-size: 2rem;}
 .card h3 {margin-top: 20px;}
@@ -252,7 +253,11 @@ background: rgba(255, 0, 0, 0.4);
 
 .ul-styled { margin-left: 20px;}
 
-.search { margin-bottom:20px; display: inline; max-width: 60%;}
+/*
+.input-search {}
+.input-search .form-control { display: inline; max-width: 60%;} 
+.input-search .glyphicon { padding: 10px; background: black; color: white; min-width: 50px; text-align: center;
+}*/
 
 .badge-alternate { color: black; background-color: white;}
 
