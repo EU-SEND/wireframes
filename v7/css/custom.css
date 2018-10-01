@@ -253,11 +253,10 @@ background: rgba(255, 0, 0, 0.4);
 
 .ul-styled { margin-left: 20px;}
 
-/*
 .input-search {}
 .input-search .form-control { display: inline; max-width: 60%;} 
 .input-search .glyphicon { padding: 10px; background: black; color: white; min-width: 50px; text-align: center;
-}*/
+}
 
 .badge-alternate { color: black; background-color: white;}
 
