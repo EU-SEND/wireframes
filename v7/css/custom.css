@@ -26,7 +26,7 @@ a, a:hover { color: black;}
 
 /* --- TAG --- */
 /* ----------- */
-hr { height: 1px; background-image: url("../img/border-dashed.png"); background-repeat: no-repeat; background-position: bottom; border: 1px solid transparent; }
+hr { padding: 20px 0; height: 1px; background-image: url("../img/border-dashed.png"); background-repeat: no-repeat; background-position: center; border: 1px solid transparent; }
 
 /* --- TEXT --- */
 /* ------------ */
@@ -152,6 +152,10 @@ footer { margin-top:20px; padding: 20px 0;  text-align: center; background-image
 /* ------------ */
 .help-card { margin-bottom: 20px; min-height: 100px; background-image: url("../img/border.png"); background-size: 80% 5px; background-repeat: no-repeat; background-position: bottom;}
 .help-card small { font-weight: bold;}
+
+/* --- ADMMIN INTRODUCTION --- */
+/* ---- ---------------------- */
+.admin-introduction { margin-bottom: 40px; padding: 40px 0; background-image: url("../img/border.png"); background-repeat: no-repeat; background-position: bottom;}
 
 /* ----------------------------- */
 /* --------- COMPONENT --------- */
