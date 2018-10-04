@@ -100,22 +100,18 @@
         <!-- FIRST LINE-->
         <div class="row">
           <div class="col-md-12 admin-introduction">
-			  
-			  <div class="col-md-8">
-            <label> Project <a href="#" data-toggle="tooltip" title="A project is lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcor."><i class="glyphicon glyphicon-info-sign"></i></a> </label>
-            <div class="form-group">
-              <select class="form-control">
-                <option>Project 1</option>
-                <option>Project 2</option>
-              </select>
+            <div class="col-md-8">
+              <label> Project <a href="#" data-toggle="tooltip" title="A project is lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcor."><i class="glyphicon glyphicon-info-sign"></i></a> </label>
+              <div class="form-group">
+                <select class="form-control">
+                  <option>Project 1</option>
+                  <option>Project 2</option>
+                </select>
+              </div>
             </div>
-			  </div>
-			  
-			  
           </div>
           <div class="col-md-8">
-            
-            <h2>Administrator <a href="#" data-toggle="tooltip" title="Administrator lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."><i class="glyphicon glyphicon-info-sign"></i></a> <a class="btn btn-default pull-right">Export list of administrators</a> <a class="btn btn-default pull-right">Contact all admin</a> </h2>
+            <h2>Administrators <a href="#" data-toggle="tooltip" title="Administrator lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."><i class="glyphicon glyphicon-info-sign"></i></a> <a class="btn btn-default pull-right">Export list of administrators</a> <a class="btn btn-default pull-right">Contact all</a> </h2>
             <a class="btn btn-default pull-right" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Add administrator</a>
             <div class="collapse" id="collapseExample">
               <div>
@@ -132,11 +128,6 @@
                   <div class="pull-right"> <a href="send-more-file.html" role="button">Cancel</a> <a href="#" class="btn btn-default" role="button">Add</a></div>
                 </form>
               </div>
-            </div>
-            <div class="form-group">
-              <label>Search administrator</label>
-              <br>
-              <input type="text" class="form-control search">
             </div>
             <table class="table table-striped">
               <thead>
@@ -168,25 +159,36 @@
                 </tr>
               </tbody>
             </table>
-			  
-			  <hr>
-			  
-			  <h2>Project parties </h2>
-            <table class="table tree">
-              <tbody>
-                <tr class="treegrid-1 treegrid-expanded">
-                  <td><span class="treegrid-expander glyphicon glyphicon-chevron-down"></span> Project 1</td>
-                </tr>
-                <tr class="treegrid-2 treegrid-parent-1" style="display: table-row;">
-                  <td><span class="treegrid-indent"></span><span class="glyphicon glyphicon-file"></span> Party XYZ</td>
-                </tr>
-                <tr class="treegrid-2 treegrid-parent-1" style="display: table-row;">
-                  <td><span class="treegrid-indent"></span><span class="glyphicon glyphicon-file"></span> Party DEF</td>
-                </tr>
-              </tbody>
-            </table>
-			  
-			  
+            <hr>
+            <h2>Parties in this project </h2>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFour">
+                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> Project 1 </a> </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="panel-body">
+                  <ul>
+                    <li>Party XYZ</li>
+                    <li>Party DEF</li>
+                    <li>Party ERT</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+			  <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFive">
+                <h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFour"> Project 2 </a> </h4>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                <div class="panel-body">
+                  <ul>
+                    <li>Party XYZ</li>
+                    <li>Party DEF</li>
+                    <li>Party ERT</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 			  
           </div>
         </div>
