@@ -8,13 +8,13 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="icon" href="favicon.ico">
-<title>European Commission - EU Send</title>
+<title>EU send</title>
 
 <!-- Bootstrap core CSS -->
 <link href="../css/bootstrap.min.css" rel="stylesheet">
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+<link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
 <link rel="stylesheet" href="../css/custom.css">
@@ -24,7 +24,7 @@
 
 <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-<script src="js/ie-emulation-modes-warning.js"></script>
+<script src="../js/ie-emulation-modes-warning.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -34,8 +34,18 @@
 </head>
 
 <body>
+<div id="alert-notification" class="alert-notification well"> <a href="#alert-notification" class="close" data-dismiss="alert" aria-label="close" id="hide">X</a>
+  <h2>Important notice for all e-TrustEx users</h2>
+  <p> A new version Windows 10 full compatible is now available. You may need to clear the cache of your web browser and your Java cache before accessing the application again. <a href="notification.html">click here for the instructions</a> on how to clear the Java cache and the Web browser cache in Firefox, Chrome and Internet Explorer. For more information on how to use the new download function click here. For any question, you can contact us at SG DECIDE ETRUSTEX or EC ETRUSTEX SUPPORT. </p>
+</div>
+<div class="alert-notification-min well">
+  <h4>Important notice</h4>
+  <p> A new version Windows 10... <a href="notification.html">click here for the instructions</a> </p>
+</div>
+
+<!-- HEADER -->
 <div class="container-fluid">
-<header class="clearfix"> <a href="received-home.html" class="logo">European Commission - EU Send</a>
+  <header class="clearfix"> <a href="received-home.html" class="logo">EU send</a>
     <ul class="nav navbar-nav navbar-right btn-top-action">
       <li class="dropdown"> <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">En - English <span class="caret"></span></a>
         <ul class="dropdown-menu">
@@ -46,12 +56,11 @@
       <li class="dropdown"> <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yuliya Krumova <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="administration.html">Administration</a></li>
-          <li><a href="profile.html">Profile</a></li>
           <li><a href="#">Log out</a></li>
         </ul>
       </li>
       <li><a href="help.html" class="btn-top-help"><i class="glyphicon glyphicon-question-sign"></i></a></li>
-		<li class="dropdown notification-btn"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-bell"></i></a>
+      <li class="dropdown notification-btn"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-bell"></i></a>
         <ul class="dropdown-menu">
           <li><a href="notification.html"><span class="badge pull-right">2</span> <strong>Notifications</strong> </a> </li>
           <li role="separator" class="divider"></li>
@@ -64,110 +73,104 @@
             06h00</a></li>
         </ul>
       </li>
-		<li><a href="#" class="btn-top-contrast"><i class="glyphicon glyphicon-adjust"></i></a></li>
+      <li><a href="#" class="btn-top-contrast"><i class="glyphicon glyphicon-adjust"></i></a></li>
     </ul>
   </header>
 </div>
-<div class="top-bar clearfix">
-  <div class="container-fluid">
-  </div>
-</div>
+<!-- END HEADER -->
+
 <div class="container-fluid">
   <div class="row"> 
     
-    <!--FIRST COLUMN-->
-    <div class="col-md-2"> <a href="send-home.html" class="btn btn-default btn-block">Send new</a>
-      <hr>
-      <div class="panel-group" id="accordion">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> All </a> </h4>
-          </div>
-          <div id="collapseOne" class="panel-collapse collapse in">
-            <div class="panel-body">
-              <ul class="nav nav-pills nav-stacked">
-                <li><a href="received-home.html"><span class="badge pull-right">4</span> Inbox </a> </li>
-                <li class="active"><a href="sent.html"><span class="badge badge-alternate pull-right"></span>Sent</a></li>
-                <li><a href="draft.html"><span class="badge badge-alternate pull-right"></span>Draft</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> Entity XYZ </a> </h4>
-          </div>
-          <div id="collapseTwo" class="panel-collapse collapse">
-            <div class="panel-body">
-              <ul class="nav nav-pills nav-stacked">
-                <li><a href="#"><span class="badge pull-right">2</span> Inbox </a> </li>
-                <li><a href="#"><span class="badge badge-alternate pull-right"></span>Sent</a></li>
-                <li><a href="#"><span class="badge badge-alternate pull-right"></span>Draft</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> Entity DEF </a> </h4>
-          </div>
-          <div id="collapseThree" class="panel-collapse collapse">
-            <div class="panel-body">
-              <ul class="nav nav-pills nav-stacked">
-                <li><a href="#"><span class="badge pull-right">3</span> Inbox </a> </li>
-                <li><a href="#"><span class="badge badge-alternate pull-right"></span>Sent</a></li>
-                <li><a href="#"><span class="badge badge-alternate pull-right"></span>Draft</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- FIRST COLUMN -->
     
-    <!--SECOND COLUMN-->
-    <div class="col-md-5 received-summary"> <a href="#">All (12)</a> | <a href="#">Unread (4)</a> <span class="icon-list"><i class="glyphicon glyphicon-refresh"></i></span>
-      <input type="text" placeholder="Search" class="form-control search">
-      <ul>
-        <li> <span class="date">Fri - 9:48</span>
-          <h2>Titre 1</h2>
-          <p class="from">From Entity XYZ</p>
-          <span class="">34 files - 789 Mb</span> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> </li>
-        <li> <span class="date">10/04/2018</span>
-          <h2>Titre 2</h2>
-          <p class="from">From Entity XYZ</p>
-          <span class="">21 files - 809 Mb</span> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> </li>
-        <li> <span class="date">09/04/2018</span>
-          <h2>Titre 3</h2>
-          <p class="from">From Entity XYZ</p>
-          <span class="">35 files - 465 Mb</span> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> </li>
-        <li> <span class="date">08/04/2018</span>
-          <h2>Titre 4</h2>
-          <p class="from">From Entity XYZ</p>
-          <span class="">86 files - 789 Mb</span> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> </li>
+    <div class="col-md-2">
+		<a class="btn btn-default" href="send-home.html">Send</a>
+		<hr>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="received-home.html"><span class="badge pull-right">4</span> Inbox </a> </li>
+        <li class="active"><a href="sent.html"><span class="badge badge-alternate pull-right"></span>Sent</a></li>
+        <li><a href="draft.html"><span class="badge badge-alternate pull-right"></span>Draft</a></li>
+        <li><a href="#"><span class="badge badge-alternate pull-right"></span>Expired</a></li>
       </ul>
     </div>
     
-    <!--THIRD COLUMN-->
-       <div class="col-md-5">
-		<a class="btn btn-default pull-right">EU Send Analytics</a>
-		<div class="col-md-5 choose-message">
-		<p>Please choose a message...</p>
+    <!-- END FIRST COLUMN --> 
+    
+    <!-- SECOND COLUMN -->
+    <div class="col-md-5 received-summary">
+      <h1>Sent</h1>
+      <i class="glyphicon glyphicon-arrow-left collapse-arrow"></i>
+      <div class="inbox-action"> <a href="#">All (12)</a> | <a href="#">Unread (4)</a> | <a href="#"><i class="glyphicon glyphicon-refresh"></i> Refresh</a> | <a href="#"><i class="glyphicon glyphicon-search"></i> Search</a> </div>
+      <ul>
+        <li><a href="#"><span class="date">10:54</span>
+          <h2>Titre 1</h2>
+          <p class="from">From Party XYZ</p>
+          <a class="btn btn-default"><i class="glyphicon glyphicon-download-alt"></i>10 files -456 Mb</a> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> <span class="icon-list"> Contrôle de subsidiarité</span></a><br>
+          <br>
+          <div id="language-1" class="collapse">
+            <ul class="language-available">
+              <li><a href="#"><i class="glyphicon glyphicon-download-alt"></i> BG </a></li>
+              <li><a href="#"><i class="glyphicon glyphicon-download-alt"></i> CS </a></li>
+              <li><a href="#"><i class="glyphicon glyphicon-download-alt"></i> ES </a></li>
+              <li><a href="#"><i class="glyphicon glyphicon-download-alt"></i> GA </a></li>
+            </ul>
+          </div>
+        </li>
+        <li> <span class="date">05:07</span>
+          <h2>Titre 2</h2>
+          <p class="from">From Party XYZ</p>
+          <a class="btn btn-default"><i class="glyphicon glyphicon-download-alt"></i> 23 files - 654 Mb</a> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> <span class="label label-default expired"> Expires in 10 days</span> </li>
+        <li> <span class="date">Mon - 08:40</span>
+          <h2>Titre 3</h2>
+          <p class="from">From Party XYZ</p>
+          <a class="btn btn-default"><i class="glyphicon glyphicon-download-alt"></i> 23 files - 987 Mb</a> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> Contrôle de subsidiarité</span><br>
+        </li>
+        <li> <span class="date">Mon - 18:37</span>
+          <h2>Titre 4</h2>
+          <p class="from">From Party XYZ</p>
+          <a class="btn btn-default"><i class="glyphicon glyphicon-download-alt"></i> 12 files - 234 Mb </a> <span> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> <span class="label label-default expired"> Expires in 10 days</span>
+          </li>
+       
+      
+        
+        
+      
+       
+       
+      </ul>
+    </div>
+    
+    <!-- END SECOND COLUMN --> 
+    
+    <!-- THIRD COLUMN -->
+    
+    <div class="col-md-5">
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle pull-right" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Party name lorem ipsum… <span class="caret"></span> </button>
+        <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+          <li><a href="#">Party XYZ</a></li>
+          <li><a href="#">Party DEF</a></li>
+        </ul>
       </div>
-	  </div>
+      <div class="col-md-5 choose-message">
+        <p>Please choose a message...</p>
+      </div>
+    </div>
+    
+    <!-- END THIRD COLUMN --> 
+    
   </div>
-  <footer>
-    <p>European Commision - EU Send</p>
-  </footer>
 </div>
+<footer>
+  <p>EU send powered by European Commission</p>
+</footer>
 
 <!-- Bootstrap core JavaScript
     ================================================== --> 
 <!-- Placed at the end of the document so the pages load faster --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script> 
 <script src="../js/bootstrap.min.js"></script> 
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
-<script src="js/ie10-viewport-bug-workaround.js"></script> 
 <script src="../js/jquery.treegrid.js"></script> 
 <script src="../js/jquery.treegrid.bootstrap3.js"></script> 
 <script>

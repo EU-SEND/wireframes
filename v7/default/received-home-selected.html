@@ -8,13 +8,13 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="icon" href="favicon.ico">
-<title>European Commission - EU Send</title>
+<title>EU send</title>
 
 <!-- Bootstrap core CSS -->
 <link href="../css/bootstrap.min.css" rel="stylesheet">
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+<link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
 <link rel="stylesheet" href="../css/custom.css">
@@ -24,7 +24,7 @@
 
 <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-<script src="js/ie-emulation-modes-warning.js"></script>
+<script src="../js/ie-emulation-modes-warning.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -34,8 +34,18 @@
 </head>
 
 <body>
+<div id="alert-notification" class="alert-notification well"> <a href="#alert-notification" class="close" data-dismiss="alert" aria-label="close" id="hide">X</a>
+  <h2>Important notice for all e-TrustEx users</h2>
+  <p> A new version Windows 10 full compatible is now available. You may need to clear the cache of your web browser and your Java cache before accessing the application again. <a href="notification.html">click here for the instructions</a> on how to clear the Java cache and the Web browser cache in Firefox, Chrome and Internet Explorer. For more information on how to use the new download function click here. For any question, you can contact us at SG DECIDE ETRUSTEX or EC ETRUSTEX SUPPORT. </p>
+</div>
+<div class="alert-notification-min well">
+  <h4>Important notice</h4>
+  <p> A new version Windows 10... <a href="notification.html">click here for the instructions</a> </p>
+</div>
+
+<!-- HEADER -->
 <div class="container-fluid">
-<header class="clearfix"> <a href="received-home.html" class="logo">European Commission - EU Send</a>
+  <header class="clearfix"> <a href="received-home.html" class="logo">EU send</a>
     <ul class="nav navbar-nav navbar-right btn-top-action">
       <li class="dropdown"> <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">En - English <span class="caret"></span></a>
         <ul class="dropdown-menu">
@@ -46,12 +56,11 @@
       <li class="dropdown"> <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yuliya Krumova <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="administration.html">Administration</a></li>
-          <li><a href="profile.html">Profile</a></li>
           <li><a href="#">Log out</a></li>
         </ul>
       </li>
       <li><a href="help.html" class="btn-top-help"><i class="glyphicon glyphicon-question-sign"></i></a></li>
-		<li class="dropdown notification-btn"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-bell"></i></a>
+      <li class="dropdown notification-btn"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-bell"></i></a>
         <ul class="dropdown-menu">
           <li><a href="notification.html"><span class="badge pull-right">2</span> <strong>Notifications</strong> </a> </li>
           <li role="separator" class="divider"></li>
@@ -64,196 +73,206 @@
             06h00</a></li>
         </ul>
       </li>
-		<li><a href="#" class="btn-top-contrast"><i class="glyphicon glyphicon-adjust"></i></a></li>
+      <li><a href="#" class="btn-top-contrast"><i class="glyphicon glyphicon-adjust"></i></a></li>
     </ul>
   </header>
 </div>
-<div class="top-bar clearfix">
-  <div class="container-fluid">
-  </div>
-</div>
+<!-- END HEADER -->
+
 <div class="container-fluid">
   <div class="row"> 
     
-    <!--FIRST COLUMN-->
-    <div class="col-md-2"> <a href="send-home.html" class="btn btn-default btn-block">Send new</a>
-      <hr>
-      <div class="panel-group" id="accordion">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> All </a> </h4>
-          </div>
-          <div id="collapseOne" class="panel-collapse collapse in">
-            <div class="panel-body">
-              <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="received-home.html"><span class="badge pull-right">4</span> Inbox </a> </li>
-                <li><a href="sent.html"><span class="badge badge-alternate pull-right"></span>Sent</a></li>
-                <li><a href="draft.html"><span class="badge badge-alternate pull-right"></span>Draft</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> Entity XYZ </a> </h4>
-          </div>
-          <div id="collapseTwo" class="panel-collapse collapse">
-            <div class="panel-body">
-              <ul class="nav nav-pills nav-stacked">
-                <li><a href="#"><span class="badge pull-right">2</span> Inbox </a> </li>
-                <li><a href="#"><span class="badge badge-alternate pull-right"></span>Sent</a></li>
-                <li><a href="#"><span class="badge badge-alternate pull-right"></span>Draft</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> Entity DEF </a> </h4>
-          </div>
-          <div id="collapseThree" class="panel-collapse collapse">
-            <div class="panel-body">
-              <ul class="nav nav-pills nav-stacked">
-                <li><a href="#"><span class="badge pull-right">3</span> Inbox </a> </li>
-                <li><a href="#"><span class="badge badge-alternate pull-right"></span>Sent</a></li>
-                <li><a href="#"><span class="badge badge-alternate pull-right"></span>Draft</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- FIRST COLUMN -->
     
-    <!--SECOND COLUMN-->
-    <div class="col-md-5 received-summary"> <a href="#">All (12)</a> | <a href="#">Unread (4)</a> <span class="icon-list"><i class="glyphicon glyphicon-refresh"></i></span>
-      <input type="text" placeholder="Search" class="form-control search">
-      <ul>
-        <li class="selected"><span class="date">07:02</span>
-          <h2>Titre 1</h2>
-          <p class="from">From Entity XYZ</p>
-          <span class="">5 files - 700 Mb</span> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span></li>
-        <li class="no-unread"> <span class="date">06:00</span>
-          <h2>Titre 2</h2>
-          <p class="from">From Entity XYZ</p>
-          <span class="">10 files - 687 Mb</span> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> <span class="label label-default expired"> Expires in 10 days</span> </li>
-        <li class="no-unread"> <span class="date">Mon - 12:40</span>
-          <h2>Titre 3</h2>
-          <p class="from">From Entity XYZ</p>
-          <span class="">23 files - 46 Mb</span> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> </li>
-        <li class="no-unread"> <span class="date">Mon - 10:37</span>
-          <h2>Titre 4</h2>
-          <p class="from">From Entity XYZ</p>
-          <span class="">98 files - 789 Mb</span> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> <span class="label label-default expired"> Expires in 10 days</span> </li>
-        <li> <span class="date">Sun - 9:00</span>
-          <h2>Titre 5</h2>
-          <p class="from">From Entity XYZ</p>
-          <span class="">76 files - 5867 Mb</span> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> </li>
-        <li> <span class="date">Mon - 10:37</span>
-          <h2>Titre 6</h2>
-          <p class="from">From Entity XYZ</p>
-          <span class="">98 files - 4567 Mb</span> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> </li>
-        <li> <span class="date">Fri - 09:50</span>
-          <h2>Titre 7</h2>
-          <p class="from">From Entity XYZ</p>
-          <span class="">56 files - 807 Mb</span> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> </li>
-        <li> <span class="date">Sun - 09:00</span>
-          <h2>Titre 8</h2>
-          <p class="from">From Entity XYZ</p>
-          <span class="">23 files - 457 Mb</span></li>
-        <li> <span class="date">Fri - 09:48</span>
-          <h2>Titre 9</h2>
-          <p class="from">From Entity XYZ</p>
-          <span class="">34 files - 789 Mb</span> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> </li>
-        <li> <span class="date">10/04/2018</span>
-          <h2>Titre 10</h2>
-          <p class="from">From Entity XYZ</p>
-          <span class="">21 files - 809 Mb</span> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> </li>
-        <li> <span class="date">09/04/2018</span>
-          <h2>Titre 11</h2>
-          <p class="from">From Entity XYZ</p>
-          <span class="">35 files - 465 Mb</span> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> </li>
-        <li> <span class="date">08/04/2018</span>
-          <h2>Titre 12</h2>
-          <p class="from">From Entity XYZ</p>
-          <span class="">86 files - 789 Mb</span> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> </li>
+    <div class="col-md-2">
+		<a class="btn btn-default" href="send-home.html">Send</a>
+		<hr>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="received-home.html"><span class="badge pull-right">4</span> Inbox </a> </li>
+        <li><a href="sent.html"><span class="badge badge-alternate pull-right"></span>Sent</a></li>
+        <li><a href="draft.html"><span class="badge badge-alternate pull-right"></span>Draft</a></li>
+        <li><a href="#"><span class="badge badge-alternate pull-right"></span>Expired</a></li>
       </ul>
     </div>
     
-    <!--THIRD COLUMN-->
-    <div class="col-md-5 received-detail">
-      <p class="date">Monday - 07:02 - 20/04/2018</p>
-      <h2>Titre 1</h2>
-      <p class="from"><strong>From:</strong> Entity XYZ</p>
-      <span class="">5 files - 700 Mb</span> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span>
-      <hr>
-      <h2>Message</h2>
-      <p>No cum nusquam commune democritum, in nec sumo exerci referrentur. Tollit senserit ad pri, ei nostro partiendo liberavisse sit, quo at consul omnesque salutatus. Eos laoreet ponderum et. Tale mucius denique te duo. Est no iusto atomorum, no rebum partem vim.</p>
-      <hr>
-      <h2>List of files</h2>
-      <table class="table tree">
-        <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><label>
-                <input type="checkbox">
-                select all</label></td>
-          </tr>
-          <tr class="treegrid-1 treegrid-expanded">
-            <td><span class="treegrid-expander glyphicon glyphicon-chevron-down"></span> Folder 1</td>
-            <td>300 Mb</td>
-            <td>pdf</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr class="treegrid-2 treegrid-parent-1" style="display: table-row;">
-            <td><span class="treegrid-indent"></span><span class="glyphicon glyphicon-file"></span> File 1</td>
-            <td>100 Mb</td>
-            <td>pdf</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr class="treegrid-2 treegrid-parent-1" style="display: table-row;">
-            <td><span class="treegrid-indent"></span><span class="glyphicon glyphicon-file"></span> File 2</td>
-            <td>40 Mb</td>
-            <td>pdf</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr class="treegrid-2 treegrid-parent-1" style="display: table-row;">
-            <td><span class="treegrid-indent"></span><span class="glyphicon glyphicon-file"></span> File 3</td>
-            <td>160 Mb</td>
-            <td>docx </td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr class="treegrid-4" style="display: none;">
-            <td><span class="treegrid-indent"></span><span class="glyphicon glyphicon-file"></span> File 4</td>
-            <td>200 Mb</td>
-            <td>pdf</td>
-            <td><input type="checkbox"></td>
-          </tr>
-          <tr class="treegrid-4" style="display: none;">
-            <td><span class="treegrid-indent"></span><span class="glyphicon glyphicon-file"></span> File 5</td>
-            <td>50 Mb</td>
-            <td>docx</td>
-            <td><input type="checkbox"></td>
-          </tr>
-        </tbody>
-      </table>
-      <button type="submit" class="btn btn-default pull-right">Download</button>
+    <!-- END FIRST COLUMN --> 
+    
+    <!-- SECOND COLUMN -->
+    <div class="col-md-5 received-summary">
+      <h1>Inbox</h1>
+      <i class="glyphicon glyphicon-arrow-left collapse-arrow"></i>
+      <div class="inbox-action"> <a href="#">All (12)</a> | <a href="#">Unread (4)</a> | <a href="#"><i class="glyphicon glyphicon-refresh"></i> Refresh</a> | <a href="#"><i class="glyphicon glyphicon-search"></i> Search</a> </div>
+      <ul>
+        <li class="selected"><a href="received-home-selected.html"><span class="date">07:02</span>
+          <h2>Titre 1</h2>
+          <p class="from">From Party XYZ</p>
+          <a class="btn btn-default" style="color:black"><i class="glyphicon glyphicon-download-alt"></i> 34 files - 234 Mb</a> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> <span class="icon-list"> Contrôle de subsidiarité</span></a><br>
+          <br>
+          <div id="language-1" class="collapse">
+            <ul class="language-available">
+              <li><a href="#"><i class="glyphicon glyphicon-download-alt"></i> BG </a></li>
+              <li><a href="#"><i class="glyphicon glyphicon-download-alt"></i> CS </a></li>
+              <li><a href="#"><i class="glyphicon glyphicon-download-alt"></i> ES </a></li>
+              <li><a href="#"><i class="glyphicon glyphicon-download-alt"></i> GA </a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="no-unread"> <span class="date">06:02</span>
+          <h2>Titre 2</h2>
+          <p class="from">From Party XYZ</p>
+          <a class="btn btn-default"><i class="glyphicon glyphicon-download-alt"></i> 67 files - 654 Mb</a> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> <span class="label label-default expired"> Expires in 10 days</span> </li>
+        <li class="no-unread"> <span class="date">Mon - 12:40</span>
+          <h2>Titre 3</h2>
+          <p class="from">From Party XYZ</p>
+          <a class="btn btn-default"><i class="glyphicon glyphicon-download-alt"></i> 45 files - 654 Mb</a> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> Contrôle de subsidiarité</span><br>
+        </li>
+        <li class="no-unread"> <span class="date">Mon - 10:37</span>
+          <h2>Titre 4</h2>
+          <p class="from">From Party XYZ</p>
+          <a class="btn btn-default"><i class="glyphicon glyphicon-download-alt"></i> 12 files - 234 Mb </a> <span> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> <span class="label label-default expired"> Expires in 10 days</span>
+          </li>
+        <li> <span class="date">Sun - 09:00</span>
+          <h2>Titre 5</h2>
+          <p class="from">From Party XYZ</p>
+          <a class="btn btn-default"><i class="glyphicon glyphicon-download-alt"></i> 87 files - 4567 Mb</a> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> <br>
+        </li>
+        <li> <span class="date">Mon - 10:37</span>
+          <h2>Titre 6</h2>
+          <p class="from">From Party XYZ</p>
+          <a class="btn btn-default"><i class="glyphicon glyphicon-download-alt"></i> 98 files - 4567 Mb</a> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span> <br>
+        </li>
+        <li> <span class="date">Fri - 09:50</span>
+          <h2>Titre 7</h2>
+          <p class="from">From Party XYZ</p>
+          <a class="btn btn-default"><i class="glyphicon glyphicon-download-alt"></i> 23 files - 456 Mb</a> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span>
+        </li>
+        <li> <span class="date">Sun - 09:00</span>
+          <h2>Titre 8</h2>
+          <p class="from">From Party XYZ</p>
+          <a class="btn btn-default"><i class="glyphicon glyphicon-download-alt"></i> 34 files - 4567 Mb</a>
+        </li>
+        <li> <span class="date">Fri - 09:48</span>
+          <h2>Titre 9</h2>
+          <p class="from">From Party XYZ</p>
+          <a class="btn btn-default"><i class="glyphicon glyphicon-download-alt"></i> 98 files - 4567 Mb</a> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span>
+        </li>
+        <li> <span class="date">10/04/2018</span>
+          <h2>Titre 10</h2>
+          <p class="from">From Entity XYZ</p>
+          <a class="btn btn-default"><i class="glyphicon glyphicon-download-alt"></i> 45 files - 2345 Mb</a> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span><br>
+        </li>
+        <li> <span class="date">09/04/2018</span>
+          <h2>Titre 11</h2>
+          <p class="from">From Entity XYZ</p>
+          <a class="btn btn-default"><i class="glyphicon glyphicon-download-alt"></i> 98 files - 4567 Mb</a> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span>
+          
+          </li>
+        <li> <span class="date">08/04/2018</span>
+          <h2>Titre 12</h2>
+          <p class="from">From Entity XYZ</p>
+          <a class="btn btn-default"><i class="glyphicon glyphicon-download-alt"></i> 34 files - 9865 Mb</a> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span>
+          </li>
+      </ul>
     </div>
+    
+    <!-- END SECOND COLUMN --> 
+    
+    <!-- THIRD COLUMN -->
+    
+    <div class="col-md-5 received-detail">
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle pull-right" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Party name lorem ipsum… <span class="caret"></span> </button>
+      <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+        <li><a href="#">Party XYZ</a></li>
+        <li><a href="#">Party DEF</a></li>
+      </ul>
+    </div>
+    <p class="date">Monday - 07:02 - 20/04/2018</p>
+    <h2>Titre 1</h2>
+    <p class="from"><strong>To:</strong> Yuliya Krumova<br>
+      <strong>From:</strong> Party XYZ </p>
+    <span class="">5 files - 700 Mb</span> <span class="icon-list"> <i class="glyphicon glyphicon-lock"></i>Encrypted</span> <span class="icon-list"> <i class="glyphicon glyphicon-ok"></i>Signed</span>
+    <hr>
+    <!--<h2>Available documents</h2>
+    <h4><small>Act</small> Com (2013) 6 Final 1</h4>
+    <ul class="ul-styled language-available-inline">
+      <li>DEU <i class="glyphicon glyphicon-file"></i></li>
+      <li>ENG <i class="glyphicon glyphicon-file"></i></li>
+      <li>FIN <i class="glyphicon glyphicon-file"></i></li>
+      <li>FRA <i class="glyphicon glyphicon-file"></i></li>
+      <li>GLE <i class="glyphicon glyphicon-file"></i></li>
+    </ul>
+    <h4><small>Annexe</small> Title</h4>
+    <h4><small>DTS</small> Title</h4>
+    <hr>-->
+    <h2>Message</h2>
+    <p>No cum nusquam commune democritum, in nec sumo exerci referrentur. Tollit senserit ad pri, ei nostro partiendo liberavisse sit, quo at consul omnesque salutatus. Eos laoreet ponderum et. Tale mucius denique te duo. Est no iusto atomorum, no rebum partem vim.</p>
+    <hr>
+    <h2>List of files</h2>
+    <table class="table tree">
+      <tbody>
+        <tr>
+          <td></td>
+          <td>700 Mb</td>
+          <td></td>
+          <td><label>
+              <input type="checkbox">
+              Select all</label></td>
+        </tr>
+        <tr class="treegrid-1 treegrid-expanded">
+          <td><span class="treegrid-expander glyphicon glyphicon-chevron-down"></span> Folder 1</td>
+          <td>300 Mb</td>
+          <td>pdf</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr class="treegrid-2 treegrid-parent-1" style="display: table-row;">
+          <td><span class="treegrid-indent"></span><span class="glyphicon glyphicon-file"></span> File 1</td>
+          <td>100 Mb</td>
+          <td>pdf</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr class="treegrid-2 treegrid-parent-1" style="display: table-row;">
+          <td><span class="treegrid-indent"></span><span class="glyphicon glyphicon-file"></span> File 2</td>
+          <td>40 Mb</td>
+          <td>pdf</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr class="treegrid-2 treegrid-parent-1" style="display: table-row;">
+          <td><span class="treegrid-indent"></span><span class="glyphicon glyphicon-file"></span> File 3</td>
+          <td>160 Mb</td>
+          <td>docx </td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr class="treegrid-4" style="display: none;">
+          <td><span class="treegrid-indent"></span><span class="glyphicon glyphicon-file"></span> File 4</td>
+          <td>200 Mb</td>
+          <td>pdf</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr class="treegrid-4" style="display: none;">
+          <td><span class="treegrid-indent"></span><span class="glyphicon glyphicon-file"></span> File 5</td>
+          <td>50 Mb</td>
+          <td>docx</td>
+          <td><input type="checkbox"></td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="submit" class="btn btn-default pull-right">Download</button>
   </div>
-  <footer>
-    <p>European Commision - EU Send</p>
-  </footer>
+    
+    <!-- END THIRD COLUMN --> 
+    
+  </div>
 </div>
+<footer>
+  <p>EU send powered by European Commission</p>
+</footer>
 
 <!-- Bootstrap core JavaScript
     ================================================== --> 
 <!-- Placed at the end of the document so the pages load faster --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script> 
 <script src="../js/bootstrap.min.js"></script> 
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
-<script src="js/ie10-viewport-bug-workaround.js"></script> 
 <script src="../js/jquery.treegrid.js"></script> 
 <script src="../js/jquery.treegrid.bootstrap3.js"></script> 
 <script>

@@ -8,13 +8,13 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="icon" href="favicon.ico">
-<title>EU send</title>
+<title>European Commission - EU Send</title>
 
 <!-- Bootstrap core CSS -->
 <link href="../css/bootstrap.min.css" rel="stylesheet">
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
 <!-- Custom styles for this template -->
 <link rel="stylesheet" href="../css/custom.css">
@@ -24,7 +24,7 @@
 
 <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-<script src="../js/ie-emulation-modes-warning.js"></script>
+<script src="js/ie-emulation-modes-warning.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -34,10 +34,8 @@
 </head>
 
 <body>
-
-<!-- HEADER -->
 <div class="container-fluid">
-  <header class="clearfix"> <a href="received-home.html" class="logo">EU send</a>
+<header class="clearfix"> <a href="received-home.html" class="logo">European Commission - EU Send</a>
     <ul class="nav navbar-nav navbar-right btn-top-action">
       <li class="dropdown"> <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">En - English <span class="caret"></span></a>
         <ul class="dropdown-menu">
@@ -48,11 +46,12 @@
       <li class="dropdown"> <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yuliya Krumova <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="administration.html">Administration</a></li>
+          <li><a href="profile.html">Profile</a></li>
           <li><a href="#">Log out</a></li>
         </ul>
       </li>
       <li><a href="help.html" class="btn-top-help"><i class="glyphicon glyphicon-question-sign"></i></a></li>
-      <li class="dropdown notification-btn"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-bell"></i></a>
+		<li class="dropdown notification-btn"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-bell"></i></a>
         <ul class="dropdown-menu">
           <li><a href="notification.html"><span class="badge pull-right">2</span> <strong>Notifications</strong> </a> </li>
           <li role="separator" class="divider"></li>
@@ -65,98 +64,43 @@
             06h00</a></li>
         </ul>
       </li>
-      <li><a href="#" class="btn-top-contrast"><i class="glyphicon glyphicon-adjust"></i></a></li>
+		<li><a href="#" class="btn-top-contrast"><i class="glyphicon glyphicon-adjust"></i></a></li>
     </ul>
   </header>
 </div>
-<!-- END HEADER -->
-
-<div class="container-fluid">
-  <div class="row"> 
-    
-    <!-- FIRST COLUMN -->
-    
-    <div class="col-md-2">
-      <div class="clearfix"><a href="received-home.html" class="btn btn-default"><i class="glyphicon glyphicon-arrow-left"></i> Back to inbox</a></div>
-    </div>
-    
-    <!-- END FIRST COLUMN --> 
-    
-    <!-- SECOND COLUMN -->
-    <div class="col-md-5 received-summary">
-      <h1>Sending files</h1>
-      <div class="form-group">
-        <label>To*</label>
-        <div class="form-group">
-          <select class="form-control">
-            <option>Select a receiver</option>
-            <option>Party ABC</option>
-            <option>Party DEF</option>
-          </select>
-        </div>
-      </div>
-      <div class="form-group">
-        <label>Subject*</label>
-        <input type="text" class="form-control">
-      </div>
-      <div class="form-group"> <a data-toggle="collapse" data-target="#sign" role="button">Sign the message?</a> </div>
-      <div id="sign" class="collapse">
-        <hr>
-        <h2>Add a certificate</h2>
-        <div class="form-group">
-          <label>Select a certificate*</label>
-          <input type="file" class="form-control" id="exampleInputEmail4" placeholder="Select certificate">
-        </div>
-        <div class="form-group">
-          <label>Certificate password*</label>
-          <input type="text" class="form-control">
-        </div>
-        <div class="clearfix">
-          <div class="pull-right"> <a href="#" class="btn btn-default" role="button">Add</a> </div>
-        </div>
-        <hr>
-      </div>
-      <div class="form-group">
-        <label>Message</label>
-        <textarea class="form-control" rows="6"></textarea>
-      </div>
-    </div>
-    
-    <!-- END SECOND COLUMN --> 
-    
-    <!-- THIRD COLUMN -->
-    
-    <div class="col-md-5">
-      <div class="dropdown">
-        <div class="clearfix">
-          <button class="btn btn-default dropdown-toggle pull-right" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> Party name lorem ipsum… <span class="caret"></span> </button>
-        </div>
-        <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
-          <li><a href="#">Party XYZ</a></li>
-          <li><a href="#">Party DEF</a></li>
-        </ul>
-      </div>
-      <div class="send"> <i class="glyphicon glyphicon-download-alt"></i>
-        <h2>Drop your file or folder here<br>
-          to start uploading…</h2>
-        <p>Or</p>
-        <a href="send-upload.html" class="btn btn-default" role="button">Browse...</a> </div>
-      <div class="pull-right"> <a tabindex="0" class="btn" role="button" data-placement="top" data-toggle="popover" data-trigger="focus" data-content="Your message has been saved!">Save</a> <a href="send-upload.html#your-file" class="btn btn-default" role="button">Upload</a></div>
-    </div>
-    
-    <!-- END THIRD COLUMN --> 
-    
+<div class="top-bar clearfix">
+  <div class="container-fluid">
   </div>
 </div>
+<div class="container-fluid">
+<div class="row">
+<!--SECOND COLUMN-->
+<div class="col-md-6 col-md-offset-3">
+
+</div>
+<div class="col-md-6 col-md-offset-3">
+<h1>Sending confirmation</h1>
+	<p>Dear Yuliya Krumova,</p>
+	<p>Your files have been sending with success!</p>
+	  <p><a href="received-home.html" class="btn btn-default">Back to Inbox</a></p>
+	
+
+
+</div>
+</div>
 <footer>
-  <p>EU send powered by European Commission</p>
+  <p>European Commision - EU Send</p>
 </footer>
+</div>
 
 <!-- Bootstrap core JavaScript
     ================================================== --> 
 <!-- Placed at the end of the document so the pages load faster --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script> 
 <script src="../js/bootstrap.min.js"></script> 
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
+<script src="js/ie10-viewport-bug-workaround.js"></script> 
 <script src="../js/jquery.treegrid.js"></script> 
 <script src="../js/jquery.treegrid.bootstrap3.js"></script> 
 <script>
@@ -167,16 +111,10 @@
           });
       });
 	
-	$(function () {
+		$(function () {
   $('[data-toggle="popover"]').popover()
 })
-	
-    </script> 
-<script>
-	$(function () {
-  		$('[data-toggle="tooltip"]').tooltip()
-	})
-	</script>
+    </script>
 </body>
 </html>
 
